@@ -19,7 +19,7 @@ export function TipsPage() {
             Tips & how to use TypingChecker
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-            TypingChecker is a free typing speed test that runs in your browser. Use this guide to learn every feature-modes,
+            TypingChecker is a free <a href="/" className="text-blue-500 hover:underline">typing speed test</a> that runs in your browser. Use this guide to learn every feature-modes,
             timer, sounds, shortcuts, and the on-screen keyboard-so you can practice efficiently and improve your WPM and
             accuracy.
           </p>
