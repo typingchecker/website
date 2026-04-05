@@ -6,6 +6,11 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>https://typingchecker.com/tips/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://typingchecker.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
