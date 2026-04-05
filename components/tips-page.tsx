@@ -177,18 +177,7 @@ export function TipsPage() {
               </p>
             </section>
 
-            <section>
-              <h2 className="text-base font-semibold text-zinc-900 dark:text-white sm:text-lg">Navigation & other pages</h2>
-              <p className="mt-3">
-                Use the site menu for <strong className="font-medium text-zinc-800 dark:text-neutral-200">Typing test</strong> (home),{" "}
-                <strong className="font-medium text-zinc-800 dark:text-neutral-200">Contact</strong>, and this{" "}
-                <strong className="font-medium text-zinc-800 dark:text-neutral-200">Tips</strong> page. The footer links to our{" "}
-                <Link href="/privacy" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
-                  Privacy Policy
-                </Link>
-                .
-              </p>
-            </section>
+            
 
             <section>
               <h2 className="text-base font-semibold text-zinc-900 dark:text-white sm:text-lg">How to improve your typing</h2>
