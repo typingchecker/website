@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 
 const navItems = [
   { href: "/", label: "Typing test" },
+  { href: "/contact", label: "Contact" },
   { href: "#", label: "Tips" },
   { href: "#", label: "About" },
 ] as const
@@ -52,7 +53,8 @@ export function SiteNavigation({ onNavigate, className, embeddedInDrawer }: Site
         )}
       >
         {navItems.map(({ href, label }) => {
-          const isActive = href === "/" && pathname === "/"
+          const isActive =
+            href.startsWith("#") ? false : href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`)
           return (
             <li key={label}>
               <Link
