@@ -1,8 +1,8 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { SiteLogo } from "@/components/site-logo"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
 
@@ -37,9 +37,7 @@ export function SiteNavigation({ onNavigate, className, embeddedInDrawer }: Site
         onClick={onNavigate}
         className="flex shrink-0 items-center gap-2.5 rounded-lg outline-none transition-opacity hover:opacity-90 focus-visible:ring-2 focus-visible:ring-blue-500/80"
       >
-        <Image
-          src="/typing-checker-logo.webp"
-          alt="QuikType"
+        <SiteLogo
           width={200}
           height={48}
           className="h-10 w-auto max-w-[min(100%,12rem)] shrink-0 object-contain object-left"

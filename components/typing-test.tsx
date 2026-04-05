@@ -1,13 +1,14 @@
 "use client"
 
 import { useState, useEffect, useCallback, useRef } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { TextDisplay } from "./text-display"
 import { VirtualKeyboard } from "./virtual-keyboard"
 import { SidebarStatsPanel } from "./sidebar-stats-panel"
 import { TypingSeoContent } from "./typing-seo-content"
+import { SiteLogo } from "./site-logo"
+import { SiteFooter } from "./site-footer"
 import { SiteNavigation } from "./site-navigation"
 import { ModeSelector } from "./mode-selector"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -289,14 +290,13 @@ export function TypingTest() {
   }, [startTime, correctChars, totalChars])
 
   return (
-    <div className="flex min-h-[100dvh] flex-col bg-zinc-100 md:flex-row dark:bg-[#0a0a0a]">
+    <div className="flex min-h-[100dvh] flex-col bg-zinc-100 dark:bg-[#0a0a0a]">
+      <div className="flex min-h-0 flex-1 flex-col md:flex-row">
       {/* Mobile: top bar + slide-out menu with all sidebar content */}
       <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
         <div className="sticky top-0 z-40 flex w-full items-center justify-between border-b border-zinc-200 bg-zinc-50/95 px-3 py-3 pt-[max(0.75rem,env(safe-area-inset-top,0px))] backdrop-blur-md dark:border-neutral-800/50 dark:bg-[#0a0a0a]/95 md:hidden">
           <Link href="/" className="flex min-w-0 items-center" aria-label="Home">
-            <Image
-              src="/typing-checker-logo.webp"
-              alt=""
+            <SiteLogo
               width={180}
               height={40}
               className="h-8 w-auto max-w-[10rem] object-contain object-left"
@@ -342,7 +342,7 @@ export function TypingTest() {
       </Sheet>
 
       {/* Desktop: fixed-width sidebar */}
-      <div className="hidden min-h-0 w-full shrink-0 flex-col border-b border-zinc-200 bg-zinc-50 dark:border-neutral-800/50 dark:bg-[#0a0a0a] md:flex md:h-[100dvh] md:w-56 md:overflow-hidden md:border-b-0 md:border-r md:border-zinc-200 dark:md:border-neutral-800/50">
+      <div className="hidden min-h-0 w-full shrink-0 flex-col border-b border-zinc-200 bg-zinc-50 dark:border-neutral-800/50 dark:bg-[#0a0a0a] md:flex md:h-full md:w-56 md:overflow-hidden md:border-b-0 md:border-r md:border-zinc-200 dark:md:border-neutral-800/50">
         <SiteNavigation />
 
         <header
@@ -422,6 +422,8 @@ export function TypingTest() {
         <TypingSeoContent />
       </main>
       </div>
+      </div>
+      <SiteFooter />
     </div>
   )
 }

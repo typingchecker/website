@@ -1,9 +1,13 @@
+import { FaqJsonLd } from "@/components/faq-json-ld"
+import { typingFaqItems } from "@/lib/faq-data"
+
 export function TypingSeoContent() {
   return (
     <article className="mt-12 w-full max-w-3xl border-t border-zinc-200 pt-10 dark:border-neutral-800 sm:mt-16 sm:pt-12">
+      <FaqJsonLd />
       <div className="space-y-4 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
         <p>
-          Test your typing speed and accuracy with our free online typing speed test. TypingChecker helps you measure
+          Test your typing speed and accuracy with our free online <a href="/" className="text-blue-500 hover:underline">typing speed test</a>. TypingChecker helps you measure
           your words per minute (WPM), track typing accuracy, and improve your typing skills with real-time results.
         </p>
         <p>
@@ -114,38 +118,14 @@ export function TypingSeoContent() {
           Frequently Asked Questions
         </h2>
         <dl className="space-y-6">
-          <div>
-            <dt className="text-sm font-semibold text-zinc-900 dark:text-white sm:text-base">What is a good typing speed?</dt>
-            <dd className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-              A good typing speed for most people is 40–60 words per minute (WPM). Professional typists often reach 70–100
-              WPM or more.
-            </dd>
-          </div>
-          <div>
-            <dt className="text-sm font-semibold text-zinc-900 dark:text-white sm:text-base">How can I improve my typing speed?</dt>
-            <dd className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-              Regular typing practice, proper finger placement, and focusing on accuracy can help improve your typing
-              speed.
-            </dd>
-          </div>
-          <div>
-            <dt className="text-sm font-semibold text-zinc-900 dark:text-white sm:text-base">Is this typing test free?</dt>
-            <dd className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-              Yes. TypingChecker provides a completely free online typing speed test.
-            </dd>
-          </div>
-          <div>
-            <dt className="text-sm font-semibold text-zinc-900 dark:text-white sm:text-base">Do I need to install any software?</dt>
-            <dd className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-              No. You can take the typing test directly in your browser without downloading anything.
-            </dd>
-          </div>
-          <div>
-            <dt className="text-sm font-semibold text-zinc-900 dark:text-white sm:text-base">Does the tool measure typing accuracy?</dt>
-            <dd className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-              Yes. Our typing checker calculates both typing speed (WPM) and accuracy during the test.
-            </dd>
-          </div>
+          {typingFaqItems.map((item) => (
+            <div key={item.question}>
+              <dt className="text-sm font-semibold text-zinc-900 dark:text-white sm:text-base">{item.question}</dt>
+              <dd className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
+                {item.answer}
+              </dd>
+            </div>
+          ))}
         </dl>
       </section>
     </article>

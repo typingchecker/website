@@ -9,6 +9,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://typingchecker.com"),
   title: "Free Typing Speed Test & WPM Checker Online",
   description:
     "Check your typing speed and accuracy instantly. Take a free typing test online and improve your WPM with practice tests and typing exercises.",
@@ -16,6 +17,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-icon.png",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/typing-speed-checker.webp",
+        alt: "Typing speed test and WPM checker preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/typing-speed-checker.webp"],
+  },
+  verification: {
+    google: "r9AWVxVILJihdZWWQqjKsa3Ppi2th1VdCJBB6S_o-ko",
   },
 }
 
