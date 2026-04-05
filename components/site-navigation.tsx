@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { href: "/", label: "Typing test" },
+  { href: "/", label: "Typing Speed Test" },
   { href: "/tips", label: "Tips" },
   { href: "/contact", label: "Contact" },
   
