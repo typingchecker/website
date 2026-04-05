@@ -19,8 +19,8 @@ export function TipsPage() {
             Tips & how to use TypingChecker
           </h1>
           <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
-            TypingChecker is a free typing speed test that runs in your browser. Use this guide to learn every feature—modes,
-            timer, sounds, shortcuts, and the on-screen keyboard—so you can practice efficiently and improve your WPM and
+            TypingChecker is a free typing speed test that runs in your browser. Use this guide to learn every feature-modes,
+            timer, sounds, shortcuts, and the on-screen keyboard-so you can practice efficiently and improve your WPM and
             accuracy.
           </p>
 
@@ -28,7 +28,7 @@ export function TipsPage() {
             <section>
               <h2 className="text-base font-semibold text-zinc-900 dark:text-white sm:text-lg">Getting started</h2>
               <ol className="mt-3 list-decimal space-y-2 pl-5">
-                <li>Stay on the home page and focus the test area—start typing the paragraph shown with your physical keyboard.</li>
+                <li>Stay on the home page and focus the test area-start typing the paragraph shown with your physical keyboard.</li>
                 <li>
                   Type each character in order. Correct characters move you forward; mistakes are reflected in your accuracy
                   percentage.
@@ -39,7 +39,7 @@ export function TipsPage() {
                 </li>
                 <li>
                   Use the <strong className="font-medium text-zinc-800 dark:text-neutral-200">mode</strong> controls (below the title)
-                  to switch between relaxed practice and a timed challenge—see below.
+                  to switch between relaxed practice and a timed challenge-see below.
                 </li>
               </ol>
             </section>
@@ -50,7 +50,7 @@ export function TipsPage() {
                 <strong className="font-medium text-zinc-800 dark:text-neutral-200">Free Type</strong> is open-ended practice. There is
                 no countdown. When you finish a passage, the next one loads automatically so you can keep going. Your{" "}
                 <strong className="font-medium text-zinc-800 dark:text-neutral-200">texts</strong> counter increases each time you
-                complete a passage—use it to track how many paragraphs you have finished in a session.
+                complete a passage-use it to track how many paragraphs you have finished in a session.
               </p>
             </section>
 
@@ -64,7 +64,7 @@ export function TipsPage() {
                 <strong className="font-medium text-zinc-800 dark:text-neutral-200">120 seconds</strong> (2 minutes).
               </p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li>The timer starts when you press your first key—not when the page loads.</li>
+                <li>The timer starts when you press your first key-not when the page loads.</li>
                 <li>
                   Keep typing: when you finish a passage, another one appears until time runs out. Your goal is to sustain speed
                   and accuracy under pressure.
@@ -161,7 +161,7 @@ export function TipsPage() {
               <h2 className="text-base font-semibold text-zinc-900 dark:text-white sm:text-lg">On-screen (virtual) keyboard</h2>
               <p className="mt-3">
                 Below the passage you will see a visual keyboard. You can <strong className="font-medium text-zinc-800 dark:text-neutral-200">click or tap</strong> keys
-                to type—useful on touch devices or if you want to practice without a physical keyboard. Keys light up when
+                to type-useful on touch devices or if you want to practice without a physical keyboard. Keys light up when
                 pressed (from the screen or your hardware). A wide <strong className="font-medium text-zinc-800 dark:text-neutral-200">space</strong> bar sits under the
                 rows for entering spaces.
               </p>
@@ -184,7 +184,7 @@ export function TipsPage() {
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>
                   <strong className="font-medium text-zinc-800 dark:text-neutral-200">Accuracy first.</strong> Speed builds on correct
-                  habits—prioritize hitting the right keys before chasing a higher WPM.
+                  habits-prioritize hitting the right keys before chasing a higher WPM.
                 </li>
                 <li>
                   <strong className="font-medium text-zinc-800 dark:text-neutral-200">Use Free Type</strong> to drill fundamentals,
@@ -193,7 +193,7 @@ export function TipsPage() {
                 </li>
                 <li>
                   <strong className="font-medium text-zinc-800 dark:text-neutral-200">Keep sessions short and regular</strong> instead
-                  of one long rare session—muscle memory improves with daily practice.
+                  of one long rare session-muscle memory improves with daily practice.
                 </li>
                 <li>
                   <strong className="font-medium text-zinc-800 dark:text-neutral-200">Minimize looking at the keyboard.</strong> The
