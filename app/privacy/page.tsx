@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld"
 import { PrivacyPolicyPage } from "@/components/privacy-policy-page"
+import { pageBreadcrumbs } from "@/lib/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -14,5 +16,10 @@ export const metadata: Metadata = {
 }
 
 export default function Privacy() {
-  return <PrivacyPolicyPage />
+  return (
+    <>
+      <BreadcrumbJsonLd items={pageBreadcrumbs.privacy} />
+      <PrivacyPolicyPage />
+    </>
+  )
 }

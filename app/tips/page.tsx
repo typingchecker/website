@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
+import { BreadcrumbJsonLd } from "@/components/breadcrumb-json-ld"
 import { TipsPage } from "@/components/tips-page"
+import { pageBreadcrumbs } from "@/lib/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Tips & How to Use the Typing Test",
@@ -14,5 +16,10 @@ export const metadata: Metadata = {
 }
 
 export default function Tips() {
-  return <TipsPage />
+  return (
+    <>
+      <BreadcrumbJsonLd items={pageBreadcrumbs.tips} />
+      <TipsPage />
+    </>
+  )
 }
