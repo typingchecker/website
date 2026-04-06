@@ -19,6 +19,7 @@ export const challengeTimes = [
   { label: "60s", seconds: 60 },
   { label: "90s", seconds: 90 },
   { label: "120s", seconds: 120 },
+  { label: "5m", seconds: 300 },
 ]
 
 export function getRandomText(): string {
