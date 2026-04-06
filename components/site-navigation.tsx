@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { href: "/", label: "Typing Speed Test" },
   { href: "/tips", label: "Tips" },
+  { href: "/typing-speed-test-1-minute", label: "1 minute test" },
   { href: "/contact", label: "Contact" },
-  
 ] as const
 
 interface SiteNavigationProps {
