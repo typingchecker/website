@@ -5,7 +5,7 @@ import { SiteShell } from "@/components/site-shell"
 export function TipsPage() {
   return (
     <SiteShell mainClassName="items-start">
-      <div className="mx-auto w-full max-w-2xl">
+      <div className="mx-auto w-full max-w-5xl">
       
 
         <article className="rounded-xl border border-zinc-200 bg-white/80 p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/40 sm:p-10">

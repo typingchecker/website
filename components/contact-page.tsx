@@ -29,7 +29,7 @@ export function ContactPage() {
 
   return (
     <SiteShell mainClassName="items-start">
-      <div className="mx-auto w-full max-w-lg">
+      <div className="mx-auto w-full max-w-5xl">
      
 
         <div className="rounded-xl border border-zinc-200 bg-white/80 p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/40 sm:p-8">

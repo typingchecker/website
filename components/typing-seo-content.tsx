@@ -3,7 +3,7 @@ import { typingFaqItems } from "@/lib/faq-data"
 
 export function TypingSeoContent() {
   return (
-    <article className="mt-12 w-full max-w-3xl border-t border-zinc-200 pt-10 dark:border-neutral-800 sm:mt-16 sm:pt-12">
+    <article className="mx-auto mt-12 w-full max-w-5xl border-t border-zinc-200 pt-10 dark:border-neutral-800 sm:mt-16 sm:pt-12">
       <FaqJsonLd />
       <div className="space-y-4 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
         <p>
