@@ -1,7 +1,5 @@
-"use client"
-
 import Image from "next/image"
-import { useTheme } from "next-themes"
+import { cn } from "@/lib/utils"
 
 interface SiteLogoProps {
   width: number
@@ -10,19 +8,26 @@ interface SiteLogoProps {
   priority?: boolean
 }
 
+/**
+ * Two assets: `dark-logo` = dark ink for light UI; `light-logo` = light ink for dark UI.
+ * Switches with Tailwind `dark:` so the correct logo matches `html.dark` / `html.light`
+ * on first paint (avoids next-themes `resolvedTheme` being undefined → wrong/invisible logo on refresh).
+ */
 export function SiteLogo({ width, height, className, priority }: SiteLogoProps) {
-  const { resolvedTheme } = useTheme()
-  // light-logo = light-colored artwork for dark UI; dark-logo = dark-colored artwork for light UI
-  const src = resolvedTheme === "light" ? "/dark-logo.webp" : "/light-logo.webp"
+  const shared = { width, height, priority, alt: "QuikType" as const }
 
   return (
-    <Image
-      src={src}
-      alt="QuikType"
-      width={width}
-      height={height}
-      className={className}
-      priority={priority}
-    />
+    <span className="inline-block shrink-0">
+      <Image
+        {...shared}
+        src="/dark-logo.webp"
+        className={cn(className, "block dark:hidden")}
+      />
+      <Image
+        {...shared}
+        src="/light-logo.webp"
+        className={cn(className, "hidden dark:block")}
+      />
+    </span>
   )
 }
