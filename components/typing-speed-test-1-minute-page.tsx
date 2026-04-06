@@ -11,14 +11,7 @@ export function TypingSpeedTest1MinutePage() {
       <FaqJsonLdFromItems items={typingSpeedTest1MinuteFaq} />
 
       <div className="mx-auto w-full max-w-2xl">
-        <Link
-          href="/"
-          className="mb-6 inline-flex min-h-[44px] items-center gap-2 rounded-lg text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 dark:text-neutral-400 dark:hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-          Back to typing test
-        </Link>
-
+   
         <article className="rounded-xl border border-zinc-200 bg-white/80 p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/40 sm:p-10">
           <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl text-balance">
             1 Minute Typing Speed Test – Check Your WPM Online
@@ -26,7 +19,7 @@ export function TypingSpeedTest1MinutePage() {
 
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
             <p>
-              A 1 minute typing speed test is a quick and effective way to measure how fast and accurately you can type.
+              A 1 minute <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">typing speed test</Link> is a quick and effective way to measure how fast and accurately you can type.
               This short typing test calculates your words per minute (WPM) and typing accuracy in just 60 seconds.
             </p>
             <p>
