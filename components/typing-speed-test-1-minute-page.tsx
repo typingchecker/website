@@ -221,9 +221,9 @@ export function TypingSpeedTest1MinutePage() {
               </h2>
               <p className="mt-3">If you want to practice with different durations, you can also try other typing tests:</p>
               <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li><Link href="/typing-speed-test-30-seconds">30 Second Typing Test</Link></li>
-                <li><Link href="/typing-speed-test-90-seconds">90 Second Typing Test</Link></li>
-                <li><Link href="/typing-speed-test-2-minutes">2 Minute Typing Test</Link></li>
+                <li><Link className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400" href="/typing-speed-test-30-seconds">30 Second Typing Test</Link></li>
+                <li><Link className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400" href="/typing-speed-test-90-seconds">90 Second Typing Test</Link></li>
+                <li><Link className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400" href="/typing-speed-test-2-minutes">2 Minute Typing Test</Link></li>
                 <li>Typing Accuracy Test</li>
               </ul>
               <p className="mt-4">
