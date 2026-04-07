@@ -48,7 +48,7 @@ export function TypingSpeedTest90SecondsPage() {
 
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <Button asChild size="lg" className="min-h-11 w-full sm:w-auto">
-              <Link href="/">Start 90 second test</Link>
+              <Link href="/">Start typing speed test</Link>
             </Button>
             <p className="text-xs text-zinc-500 dark:text-neutral-500 sm:text-sm">
               On the test page, choose <strong className="font-medium text-zinc-700 dark:text-neutral-300">Challenge</strong>{" "}
@@ -70,7 +70,7 @@ export function TypingSpeedTest90SecondsPage() {
                 <li>
                   Open the{" "}
                   <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
-                    typing test tool
+                    typing speed test
                   </Link>
                   .
                 </li>
@@ -230,13 +230,13 @@ export function TypingSpeedTest90SecondsPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
+                  <Link href="/typing-speed-test-2-minutes" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
                     2 Minute Typing Test
                   </Link>{" "}
                   <span className="text-zinc-500 dark:text-neutral-500">(Challenge → 120s)</span>
                 </li>
                 <li>
-                  <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
+                  <Link href="/typing-speed-test-5-minutes" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
                     5 Minute Typing Test
                   </Link>{" "}
                   <span className="text-zinc-500 dark:text-neutral-500">(repeat timed sessions)</span>

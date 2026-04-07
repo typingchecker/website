@@ -46,7 +46,7 @@ export function TypingSpeedTest30SecondsPage() {
 
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <Button asChild size="lg" className="min-h-11 w-full sm:w-auto">
-              <Link href="/">Start 30 second test</Link>
+              <Link href="/typing-speed-test-30-seconds">Start 30 second test</Link>
             </Button>
             <p className="text-xs text-zinc-500 dark:text-neutral-500 sm:text-sm">
               On the test page, choose <strong className="font-medium text-zinc-700 dark:text-neutral-300">Challenge</strong>{" "}
@@ -66,7 +66,7 @@ export function TypingSpeedTest30SecondsPage() {
                 <li>
                   Open the{" "}
                   <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
-                    typing test
+                    typing speed test
                   </Link>
                   , select <strong className="font-medium text-zinc-800 dark:text-neutral-200">Challenge</strong> mode, and
                   choose <strong className="font-medium text-zinc-800 dark:text-neutral-200">30s</strong>.
@@ -183,19 +183,19 @@ export function TypingSpeedTest30SecondsPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
+                  <Link href="/typing-speed-test-90-seconds" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
                     90 Second Typing Test
                   </Link>{" "}
                   <span className="text-zinc-500 dark:text-neutral-500">(Challenge → 90s)</span>
                 </li>
                 <li>
-                  <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
+                  <Link href="/typing-speed-test-2-minutes" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
                     2 Minute Typing Test
                   </Link>{" "}
                   <span className="text-zinc-500 dark:text-neutral-500">(Challenge → 120s)</span>
                 </li>
                 <li>
-                  <Link href="/" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
+                  <Link href="/typing-speed-test-accuracy" className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400">
                     Typing Accuracy Test
                   </Link>{" "}
                   <span className="text-zinc-500 dark:text-neutral-500">(main typing test)</span>

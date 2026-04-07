@@ -48,7 +48,7 @@ export function TypingSpeedTest5MinutesPage() {
 
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <Button asChild size="lg" className="min-h-11 w-full sm:w-auto">
-              <Link href="/">Start 5 minute test</Link>
+              <Link href="/">Start typing speed test</Link>
             </Button>
             <p className="text-xs text-zinc-500 dark:text-neutral-500 sm:text-sm">
               On the test page, choose <strong className="font-medium text-zinc-700 dark:text-neutral-300">Challenge</strong>{" "}
