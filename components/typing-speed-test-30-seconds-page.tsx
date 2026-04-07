@@ -11,13 +11,6 @@ export function TypingSpeedTest30SecondsPage() {
       <FaqJsonLdFromItems items={typingSpeedTest30SecondsFaq} />
 
       <div className="mx-auto w-full max-w-5xl">
-        <Link
-          href="/"
-          className="mb-6 inline-flex min-h-[44px] items-center gap-2 rounded-lg text-sm font-medium text-zinc-600 transition-colors hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500/70 dark:text-neutral-400 dark:hover:text-white"
-        >
-          <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden />
-          Back to typing test
-        </Link>
 
         <article className="rounded-xl border border-zinc-200 bg-white/80 p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/40 sm:p-10">
           <h1 className="text-balance text-2xl font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
