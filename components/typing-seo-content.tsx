@@ -86,10 +86,11 @@ export function TypingSeoContent() {
           You can try multiple typing test durations such as:
         </p>
         <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-600 dark:text-neutral-400 sm:text-base">
-          <li>30 Second Typing Test</li>
+          <li><Link href="/typing-speed-test-30-seconds">30 Second Typing Test</Link></li>
           <li><Link href="/typing-speed-test-1-minute">1 Minute Typing Test</Link></li>
-          <li>90 Second Typing Test</li>
-          <li>2 Minute Typing Test</li>
+          <li><Link href="/typing-speed-test-90-seconds">90 Second Typing Test</Link></li>
+          <li><Link href="/typing-speed-test-2-minutes">2 Minute Typing Test</Link></li>
+          <li><Link href="/typing-speed-test-5-minutes">5 Minute Typing Test</Link></li>
         </ul>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
           Each typing test calculates your WPM typing speed and typing accuracy, helping you compare results and improve
