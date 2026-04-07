@@ -11,6 +11,9 @@ const navItems = [
   { href: "/tips", label: "Tips" },
   { href: "/typing-speed-test-30-seconds", label: "30 second test" },
   { href: "/typing-speed-test-1-minute", label: "1 minute test" },
+  { href: "/typing-speed-test-90-seconds", label: "90 second test" },
+  { href: "/typing-speed-test-2-minutes", label: "2 minute test" },
+  { href: "/typing-speed-test-5-minutes", label: "5 minute test" },
   { href: "/contact", label: "Contact" },
 ] as const
 

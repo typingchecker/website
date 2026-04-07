@@ -23,4 +23,16 @@ export const pageBreadcrumbs: Record<string, BreadcrumbItem[]> = {
     { name: "Home", path: "/" },
     { name: "30 Second Typing Test", path: "/typing-speed-test-30-seconds" },
   ],
+  typingSpeedTest90Seconds: [
+    { name: "Home", path: "/" },
+    { name: "90 Second Typing Test", path: "/typing-speed-test-90-seconds" },
+  ],
+  typingSpeedTest2Minutes: [
+    { name: "Home", path: "/" },
+    { name: "2 Minute Typing Test", path: "/typing-speed-test-2-minutes" },
+  ],
+  typingSpeedTest5Minutes: [
+    { name: "Home", path: "/" },
+    { name: "5 Minute Typing Test", path: "/typing-speed-test-5-minutes" },
+  ],
 }
