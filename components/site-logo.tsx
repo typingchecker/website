@@ -14,7 +14,7 @@ interface SiteLogoProps {
  * on first paint (avoids next-themes `resolvedTheme` being undefined → wrong/invisible logo on refresh).
  */
 export function SiteLogo({ width, height, className, priority }: SiteLogoProps) {
-  const shared = { width, height, priority, alt: "QuikType" as const }
+  const shared = { width, height, priority, alt: "Typing Speed Test" as const }
 
   return (
     <span className="inline-block shrink-0">
