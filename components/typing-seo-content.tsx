@@ -195,13 +195,38 @@ export function TypingSeoContent() {
           Typing speed is usually measured in words per minute (WPM).
         </p>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">Typical typing speeds include:</p>
-        <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-600 dark:text-neutral-400 sm:text-base">
-          <li>20–30 WPM - Beginner typists</li>
-          <li>40–45 WPM - Average typing speed</li>
-          <li>50–70 WPM - Good typing speed</li>
-          <li>70–100 WPM - Advanced typists</li>
-          <li>100+ WPM - Professional typists</li>
-        </ul>
+        <div className="overflow-x-auto rounded-lg border border-zinc-200 dark:border-neutral-800">
+          <table className="w-full min-w-[320px] text-left text-sm">
+            <thead className="border-b border-zinc-200 bg-zinc-50 dark:border-neutral-800 dark:bg-neutral-900/50">
+              <tr>
+                <th className="px-4 py-3 font-semibold text-zinc-900 dark:text-white">Typing Speed</th>
+                <th className="px-4 py-3 font-semibold text-zinc-900 dark:text-white">Level</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-zinc-200 dark:divide-neutral-800">
+              <tr className="even:bg-zinc-50/60 dark:even:bg-neutral-900/20 hover:bg-zinc-100/70 dark:hover:bg-neutral-800/40">
+                <td className="px-4 py-3 font-mono tabular-nums">20–30 WPM</td>
+                <td className="px-4 py-3">Beginner typists</td>
+              </tr>
+              <tr className="even:bg-zinc-50/60 dark:even:bg-neutral-900/20 hover:bg-zinc-100/70 dark:hover:bg-neutral-800/40">
+                <td className="px-4 py-3 font-mono tabular-nums">40–45 WPM</td>
+                <td className="px-4 py-3">Average typing speed</td>
+              </tr>
+              <tr className="even:bg-zinc-50/60 dark:even:bg-neutral-900/20 hover:bg-zinc-100/70 dark:hover:bg-neutral-800/40">
+                <td className="px-4 py-3 font-mono tabular-nums">50–70 WPM</td>
+                <td className="px-4 py-3">Good typing speed</td>
+              </tr>
+              <tr className="even:bg-zinc-50/60 dark:even:bg-neutral-900/20 hover:bg-zinc-100/70 dark:hover:bg-neutral-800/40">
+                <td className="px-4 py-3 font-mono tabular-nums">70–100 WPM</td>
+                <td className="px-4 py-3">Advanced typists</td>
+              </tr>
+              <tr className="even:bg-zinc-50/60 dark:even:bg-neutral-900/20 hover:bg-zinc-100/70 dark:hover:bg-neutral-800/40">
+                <td className="px-4 py-3 font-mono tabular-nums">100+ WPM</td>
+                <td className="px-4 py-3">Professional typists</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
           Using an online typing speed test regularly helps you track your progress and gradually increase your typing
           speed.
