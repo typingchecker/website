@@ -24,15 +24,6 @@ export function TypingClubReviewPage() {
             Typing Club Review: Is It Still the Best Typing Tool in 2026?
           </h1>
 
-          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
-            <Button asChild size="lg" className="min-h-11 w-full sm:w-auto">
-              <Link href="/">Try TypingChecker</Link>
-            </Button>
-            <p className="text-xs text-zinc-500 dark:text-neutral-500 sm:text-sm">
-              Free typing speed tests with WPM and accuracy—no install.
-            </p>
-          </div>
-
           <div className="mt-12 space-y-10 text-sm leading-relaxed text-zinc-600 dark:text-neutral-400 sm:text-base">
             <section className="space-y-4">
               <h2 className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white sm:text-xl">
