@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { href: "/", label: "Typing Speed Test" },
   { href: "/tips", label: "Tips" },
+  { href: "/typing-club-review-alternatives", label: "Typing Club review" },
   { href: "/typing-speed-test-30-seconds", label: "30 second test" },
   { href: "/typing-speed-test-1-minute", label: "1 minute test" },
   { href: "/typing-speed-test-90-seconds", label: "90 second test" },
