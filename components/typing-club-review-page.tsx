@@ -33,7 +33,7 @@ export function TypingClubReviewPage() {
                 <a
                   href="https://www.typingclub.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer nofollow"
                   className="font-medium text-blue-600 underline-offset-2 hover:underline dark:text-blue-400"
                 >
                   Typing Club
